@@ -1,5 +1,6 @@
 from requests_html import HTMLSession
 
+
 class Scraper():
     def scrapedata(self, tag):
         # tag = input('What Tag Bruh \n')

@@ -5,8 +5,8 @@ app = FastAPI()
 
 quotes = Scraper()
 
-@app.get("/{cat}")
-async def read_item(cat):
+@app.get("/search")
+async def read_item(cat: str):
     return quotes.scrapedata(cat)
 
 @app.get('/')
